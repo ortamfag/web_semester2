@@ -1,0 +1,22 @@
+header{
+    background-color: #FF6666;
+}
+
+.header {
+    display:flex;
+    color:black;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    display:flex;
+    background-color: #CCFFCC;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.one .two .three {
+    background-color: #CCFFCC;
+}
