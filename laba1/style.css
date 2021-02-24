@@ -42,3 +42,30 @@ img {
 .fifth_second {
     align-self: center;
 }
+
+.sixth {
+    display:flex;
+    width:100%;
+}
+
+.sixth_fourth {
+    flex-shrink: 0;
+}
+.seventh {
+    display: flex;
+    height: 5%;
+    width: 40%;
+}
+
+.seventh_second {
+    flex-grow: 0.6;
+}
+
+.nineth{
+    display:flex;
+
+}
+
+.nineth_second {
+    flex-basis: 50%;
+}
