@@ -1,34 +1,44 @@
-header{
-    background-color: #FF6666;
+* {
+    background-color:#CCFFCC
 }
 
-.header {
-    display:flex;
-    color:black;
-    justify-content: space-around;
-    font-family: 'Roboto', sans-serif;
-}
-
-h2 {
+h1 {
     text-align: center;
+    background-color:#99CCFF
 }
 
-.main_pictures {
+img {
+    width: 10%;
+}
+
+.first {
     display:flex;
-    flex-wrap: wrap;
-    align-content: center;
+    justify-content: space-around;
 }
 
-.main_lorem {
-    font-family: 'Roboto', sans-serif;
+.second {
+    display:flex;
+    flex-direction: row-reverse;
 }
 
-.footer_picture {
+.third {
     display:flex;
 
-    flex-direction:row-reverse;
 }
 
-footer {
-    background-color: #FF6666;
+.third_second {
+    order: -1;
+}
+
+.fourth {
+    display:flex;
+    align-items: flex-end;
+}
+
+.fifth {
+    display:flex;
+}
+
+.fifth_second {
+    align-self: center;
 }
