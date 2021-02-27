@@ -42,11 +42,19 @@ h2 {
 
 .align-items {
     display:grid;
-    grid-template-columns: 50% 50%;
-    align-items: center;
+    grid-template-columns: 900px 500px;
+    align-items: start;
 }
 
 .justify-content {
     display: grid;
+    grid-template-columns: 400px 500px;
     justify-content: space-around;   
+}
+
+.align-content {
+
+    display:grid;
+    grid-template-columns: 70px 70px;
+    align-content: center;
 }
