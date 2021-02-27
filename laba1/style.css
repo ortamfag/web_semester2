@@ -17,7 +17,7 @@ h1 {
 }
 
 .picture_info{
-    width:350px;
+    width: 350px;
 }
 .justify-content {
     display:flex;
@@ -36,6 +36,8 @@ h1 {
 
 .order {
     display:flex;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
@@ -45,6 +47,7 @@ h1 {
 
 .align-self {
     display:flex;
+    justify-content: space-around;
 }
 
 .picture_align-self {
@@ -53,24 +56,34 @@ h1 {
 
 .flex-shrink {
     display:flex;
+    justify-content: space-around;
+    align-items:center;
 }
 
 .picture_flex-shrink {
-    flex-shrink: 1;
+    flex-shrink: 0;
 }
 .flex-grow {
     display: flex;
+    justify-content: space-around;
 }
 
 .picture_flex-grow {
-    flex-grow: 1;
+    flex-grow: 0.3;
 }
 
 .flex-basis{
     display:flex;
+    align-items: center;
+    justify-content: space-around;
 
 }
 
 .picture_flex-basis {
     flex-basis: 50%;
 }
+
+@media screen and (max-width: 992px) { 
+    div.contentblock {
+        width: 970px;} 
+    }
