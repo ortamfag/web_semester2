@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/print.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+    <title>ФлораМаркт</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav__ul flex justify-center">
+            <li class="nav__item">Каталог</li>
+            <li class="nav__item">О компании</li>
+            <li class="nav__item">Способы оплаты</li>
+            <li class="nav__item">Доставка</li>
+            <li class="nav__item">Отзывы</li>
+            <li class="nav__item">Дисконтные карты</li>
+            <li class="nav__item">Видео</li>
+            <li class="nav__item">Контакты</li>
+            <div class="nav__vertborder"></div>
+            <li class="nav__item"><img class="nav__svg" src="img/user.svg" width="16" height="16">Войти</li>
+            <li class="nav__item"><img class="nav__svg" src="img/logout.svg" width="16" height="16">Регистрация</li>
+        </ul>
+
+        <hr class="nav__hr">
+    </nav>
+
+    <header class="header flex justify-space-between">
+        <div class="header__img align-self-center"><img src="img/flora-markt.png" width="156" height="41"></div>
+        <div class="header__svg align-self-center"><img src="img/shopping-cart.svg" width="27" height="27"></div>
+        <div class="header__price align-self-center">
+            <p class="header__paragraph">0 ₽</p>
+        </div>
+        <div class="header__svg align-self-center"><img src="img/bars.svg" width="24" height="24"></div>
+    </header>
+
+    <div id="header">
+        <img src="img/flora-markt-desktop.svg">
+        <div class="header__number">
+            <p class="header__paragraph number">+7 965 151 18 39</p>
+            <p class="header__paragraph number">+7 916 122 18 98</p>
+        </div>
+
+        <div class="header__third">
+            <div class="header__clock">
+                <img id = "header__clock" src="img/clock.svg">
+                <p class="header__paragraph">Ждем вас с 8:00 до 22:00</p>
+            </div>
+
+            <div class="header__pointer">
+                <img id="header__pointer" src="img/marker.svg">
+                <p class="header__paragraph">Адреса цветочных центров</p>
+            </div>
+        </div>
+
+        <div class="header__basket">
+            <div class="header__starred">
+                <img id="header__heart" src="img/heart.svg">
+                <p class="header__paragraph starred">Избранное</p>
+            </div>
+
+            <div class="header__trash">
+                <img id="header__shopping-cart" src="img/shopping-cart.svg">
+                <p class="header__paragraph money">0 ₽</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        
+        <div class="menu__line"><a class="flow" href="">РОЗЫ</a></div>
+        <div class="menu__vertborder"></div>
+        <div class="menu__line"><a class="flow" href="">ЦВЕТЫ</a></div>
+        <div class="menu__vertborder"></div>
+        <div class="menu__line"><a class="flow" href="">ГОРШЕЧНЫЕ РАСТЕНИЯ</a></div>
+        <div class="menu__vertborder"></div>
+        <div class="menu__line"><a class="flow" href="">БУКЕТЫ</a></div>
+        <div class="menu__vertborder"></div>
+        <div class="menu__line"><a class="flow" href="">ПОВОД</a></div>
+        <div class="menu__vertborder"></div>
+        <div class="menu__line"><a class="flow" href="">ПОДАРКИ</a></div>
+        <div class="menu__vertborder"></div>
+        <div class="menu__line"><a class="flow" href="">АКЦИИ</a></div>
+        
+    </div>
+
+    <main>
+
+        <section class="advertisement">
+
+            <div class="advertisement_img">
+                <img id="advertisement_img-mobile" src="img/advertisement-mobile.png" width="320" height="320">
+                <img id="advertisement_img" src="img/advertisement.png">
+            </div>
+
+            <div class="advertisement__add flex">
+
+                <p class="advertisement__paragraph">Всегда в продаже более 100 готовых дизайнерских букетов</p>
+
+                <div class="advertisement__link flex">
+                    <a id="advertisement__link">Перейти в каталог</a>
+                    <img class="advertisement__link__img" src="img/angle-right.svg">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="delivery">
+
+            <div class="delivery__slider flex">
+                <div class="delivery__item delivery__painted"></div>
+                <div class="delivery__item"></div>
+                <div class="delivery__item"></div>
+                <div class="delivery__item"></div>
+                <div class="delivery__item"></div> 
+            </div>
+
+            <div class="delivery__title">
+                <h1 class="delivery__h1">Доставка цветов по Москве</h1>
+            </div>
+
+            <div class="delivery__choice flex">
+                <div class="delivery__choice-item flex">
+                    <p class="delivery__paragraph">Цена ...</p>
+                    <img class="delivery__img" src="img/angle-down.svg" width="16" height="16">
+                </div>
+
+                <hr class="delivery__hr-mobile">
+                <hr class="delivery__hr-desktop">
+
+                <div class="delivery__choice-item flex">
+                    <p class="delivery__paragraph">Цветы ...</p>
+                    <img class="delivery__img" src="img/angle-down.svg" width="16" height="16">
+                </div>
+
+                <hr class="delivery__hr-mobile">
+                <hr class="delivery__hr-desktop">
+
+                <div class="delivery__choice-item flex">
+                    <p class="delivery__paragraph">Кому ...</p>
+                    <img class="delivery__img" src="img/angle-down.svg" width="16" height="16">
+                </div>
+
+                <hr class="delivery__hr-mobile">
+                <hr class="delivery__hr-desktop">
+
+                <div class="delivery__choice-item flex">
+                    <p class="delivery__paragraph">Повод ...</p>
+                    <img class="delivery__img" src="img/angle-down.svg" width="16" height="16">
+                </div>
+
+                <hr class="delivery__hr-mobile">
+                <hr class="delivery__hr-desktop">
+
+                <div class="delivery__choice-item delivery__rounded flex">
+                    <p class="delivery__paragraph">Стиль ...</p>
+                    <img class="delivery__img" src="img/angle-down.svg" width="16" height="16">
+                </div>
+            </div>
+        </section>
+
+        <section class="centers">
+
+            <div class="centers__main">
+
+                <div class="centers__title">
+                    <h1 class="centers__h1">Цветочные центры</h1>
+                </div>
+
+                <div class="centers__stations flex">
+                
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Марьино</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Белорусская</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Щёлковская</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Профсоюзная</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Площадь Ильича</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Каширская</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Братиславская</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Нахимовский проспект</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Полянка</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Кантемировская</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Варшавская</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Новогиреево</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Дмитровская</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Академическая</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Текстильщики</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Университет</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Пролетарская</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item">
+                            <p class="centers__paragraph">м. Красносельская</p>
+                        </div>
+                    </div>
+
+                    <div class="centers__metro">
+                        <div class="centers__item centers__last-item">
+                            <p class="centers__paragraph">м. Черкизовская</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+
+            <div class="description__title-h1">
+                <h1 class="description__h1">«Флорамаркт» — цветочная база и сеть магазинов в Москве</h1>
+            </div>
+
+            <div class="description__subtitle">
+                <p class="description__paragraph">Готовитесь к празднику? Мечтаете сделать приятный сюрприз близкому человеку? 
+                    Любите цветы и с удовольствием дарите их хорошим людям? Интернет-магазин цветов «Флорамаркт» станет для вас настоящим помощником.
+                </p>
+            </div>
+
+            <div class="description__main">
+
+                <div id="description__img">
+
+                        <div class="description__title-h2">
+                            <h2 class="description__h2">У нас богатый выбор цветочных композиций</h2>
+                        </div>
+
+                        <div class="description__img">
+                            <img id="description__img" src="img/woman1.png" width="290" height="193">
+                        </div>
+
+                        <div class="description__main-subtitle">
+                            <p class="description__paragraph">В каталогах представлен широкий ассортимент оригинальных букетов, подарков и сувениров. 
+                                Свадебные композиции, цветы для зрелых женщин и молодых девушек, роскошные корзины и скромные букеты — выбор, 
+                                достойный лучших магазинов, реализующих произведения флористического искусства.
+                            </p>
+                        </div>
+                </div>
+
+                <div class="description__title-h2">
+                    <h2 class="description__h2">Цветы с доставкой в Москве</h2>
+                </div>
+
+                <div class="description__img">
+                    <img id="description__img" src="img/woman2.png" width="290" height="193">
+                </div>
+
+                
+                <div class="description__main-subtitle">
+                    <p class="description__paragraph">«Floramarkt» — сеть из 17 цветочных магазинов, расположенных в разных районах Москвы, поэтому доставка букетов производится курьерами в минимальные сроки.</p>
+                    <p class="description__paragraph">Поводов, чтобы преподнести близкому человеку цветы, много — свадьба, 
+                        День рождения, юбилей, профессиональный праздник, 8 Марта, но не обязательно ждать значимого события, ведь неожиданные сюрпризы особенно приятны.
+                        Знакомьтесь с ассортиментом товаров и выбирайте лучшее!
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="description__main-desktop">
+                
+                <div id="id">
+
+                <div class="description__img">
+                    <img id="description__img" src="img/woman1.png" width="290" height="193">
+                </div>
+
+                <div id="description__text-1">
+                    <div class="description__title-h2">
+                        <h2 class="description__h2">У нас богатый выбор цветочных композиций</h2>
+                    </div>
+
+                    <div class="description__main-subtitle">
+                        <p class="description__paragraph description__main-paragraph1">В каталогах представлен широкий ассортимент оригинальных букетов, подарков и сувениров. 
+                            Свадебные композиции, цветы для зрелых женщин и молодых девушек, роскошные корзины и скромные букеты — выбор, 
+                            достойный лучших магазинов, реализующих произведения флористического искусства.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+                <div id="id2">
+                <div id="description__text-2">
+
+                    <div class="description__title-h2">
+                        <h2 class="description__h2">Цветы с доставкой в Москве</h2>
+                    </div>
+
+                    <div class="description__main-subtitle">
+                        <p class="description__paragraph description__main-paragraph2">«Floramarkt» — сеть из 17 цветочных магазинов, расположенных в разных районах Москвы, поэтому доставка букетов производится курьерами в минимальные сроки.</p>
+                        <p class="description__paragraph description__main-paragraph2">Поводов, чтобы преподнести близкому человеку цветы, много — свадьба, 
+                            День рождения, юбилей, профессиональный праздник, 8 Марта, но не обязательно ждать значимого события, ведь неожиданные сюрпризы особенно приятны.
+                            Знакомьтесь с ассортиментом товаров и выбирайте лучшее!
+                        </p>
+                    </div>
+
+                </div>
+
+                    <div class="description__img">
+                        <img id="description__img" src="img/woman2.png" width="290" height="193">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
