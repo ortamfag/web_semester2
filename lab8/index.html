@@ -1,56 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="script.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<title>Document</title>
-
-	<style>
-		svg g {
-			transition: stroke .3s ease;
-		}
-
-		svg:hover g{
-			stroke: #000;
-		}
-	</style>
 </head>
+
 <body>
-	<svg width="100" height="100" viewbox="0 0 300 300">
+	<svg class="topthing" viewbox='0 0 3000 400'>
+        <use id="home-search-use" href='#home'></use>
+    </svg>
+
+
+	<svg class="burger" id="burger" width="100" height="100" viewbox="0 0 300 300">
 		<g stroke="#222" stroke-width="15" id="burgerSvg">
 			<circle cx="150" cy="150" r="130" fill="transparent" />
 
-			<line x1="70" x2="230" y1="100" y2="100" />
-			<line x1="70" x2="230" y1="150" y2="150" />
-			<line x1="70" x2="230" y1="200" y2="200" />
+			<line id="line1" class="burger-line" x1="70" x2="230" y1="100" y2="100" stroke=#CCFFFF />
+			<line id="line2" class="burger-line" x1="70" x2="230" y1="150" y2="150" stroke=#CCFFFF />
+			<line id="line3" class="burger-line" x1="70" x2="230" y1="200" y2="200" stroke=#CCFFFF />
 		</g>
 	</svg>
 
-	<svg width="100" height="100" viewbox="0 0 300 300">
+	<svg class="close" width="100" height="100" viewbox="0 0 300 300">
 		<g stroke="#222" stroke-width="15" id="closeSvg">
 			<circle cx="150" cy="150" r="130" fill="transparent" />
 
-			<line x1="80" x2="220" y1="80" y2="220" />
-			<line x1="80" x2="220" y1="220" y2="80" />
+			<line x1="80" x2="220" y1="80" y2="220" stroke=#66FF00 />
+			<line x1="80" x2="220" y1="220" y2="80" stroke=#66FF00 />
 		</g>
 	</svg>
 
-	<svg width="100" height="100" viewbox="0 0 300 300">
+	<svg class="search" width="100" height="100" viewbox="0 0 300 300">
 		<g stroke="#222" stroke-width="15" id="searchSvg">
 			<circle cx="110" cy="110" r="90" fill="transparent"  />
 			<line x1="175" x2="280" y1="175" y2="280" />
 		</g>
 	</svg>
 
-	<svg width="100" height="100" viewbox="-20 -20 340 340">
+	<svg class="house" width="100" height="100" viewbox="-20 -20 340 340">
 		<g id="houseSvg" stroke="#222" stroke-width="15">
 			<polygon points="0 140, 150 0, 300 140, 250 140, 250 300, 210 300, 210 210, 150 210, 150 300, 50 300, 50 140" fill="transparent" />
 		</g>
 	</svg>
 
-	<script></script>
+	<svg>
+		<symbol stroke="#222" stroke-width="5" id="home">
+
+			<polygon points="20 140, 150 20, 300 140, 250 140, 250 300, 210 300, 210 210, 150 210, 150 300, 50 300, 50 140" fill="transparent" />
+
+			<circle cx="610" cy="130" r="90" fill="transparent"  />
+			<line x1="675" x2="780" y1="195" y2="300"/>
+		</symbol>
+	</svg>
+
+	<script src="script.js"></script>
 </body>
 </html>

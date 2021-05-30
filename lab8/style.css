@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.burger{
+    cursor: pointer;
+}
+
+.burger:hover line{
+    stroke: #9966FF;
+    transition: 0.3s;
+}
+
+.burger:hover circle{
+    stroke: #6600CC;
+    transition: 0.3s;
+}
+
+.close:hover line{
+    stroke: #FF0000;
+    transition: 0.3s;
+}
+
+.close:hover circle{
+    stroke: #FFFFFF;
+    transition: 0.3s;
+}
+
+.search:hover circle{
+    stroke: #0000FF;
+    transition: 0.3s;
+}
+
+.house:hover polygon{
+    stroke: #66FF66;
+    transition: 0.3s;
+}
+
+#line1,
+#line2,
+#line3 {
+    transition: all 0.5s;
+}
+.line1-animate {
+    transform:  translate(-20px, 200px) rotate(-45deg);
+}
+.line2-animate {
+    opacity: 0;
+}
+.line3-animate {
+    transform: translate(180px, -83px) rotate(45deg);
+}
+
