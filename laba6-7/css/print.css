@@ -30,4 +30,31 @@
         margin-bottom: 1.5cm;
     }
 
+    #header{
+        display:flex;
+        width: 100%;
+
+        justify-content: space-between;
+        margin: 0;
+        margin-top: 1cm;
+    }
+    .header__clock{
+        margin-bottom: 10px;
+    }
+
+    .header__starred{
+        margin-bottom: 10px;
+    }
+
+    .header__number{
+        align-self: center;
+    }
+
+    .header{
+        display:none;
+    }
+
+    .delivery{
+        display: none;
+    }
 }
