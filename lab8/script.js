@@ -8,3 +8,10 @@ burger.addEventListener('click', function(){
     line2.classList.toggle('line2-animate');
     line3.classList.toggle('line3-animate');
 });
+
+let switcher = document.getElementById('switch');
+let lamp = document.getElementById('lamp');
+switcher.addEventListener('click', function(){
+    lamp.classList.toggle('light')
+})
+
