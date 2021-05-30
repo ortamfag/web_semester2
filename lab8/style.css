@@ -53,3 +53,23 @@
     transform: translate(180px, -83px) rotate(45deg);
 }
 
+#hrs {
+    position: absolute;
+    transform-origin: 50px 50px;
+    animation: time infinite linear 17s;
+}
+#mnts {
+    position: absolute;
+    transform-origin: 50px 50px;
+    animation: time infinite linear 4s;
+}
+
+@keyframes time {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
+
