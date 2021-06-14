@@ -8,6 +8,10 @@ body{
     background-color: #FFFFFF;
 }
 
+li{
+    margin: 10px;
+}
+
 .header, .footer{
     background-color: #003366;
     display: flex;
@@ -19,8 +23,8 @@ body{
 }
 
 .footer{
-    margin-top: 100px;
-    height: 191px;
+    margin-top: 50px;
+    height: 100px;
 }
 
 .footer__text{
