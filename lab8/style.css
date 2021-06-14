@@ -118,3 +118,10 @@ path {
     transform: rotate(135deg);
 }
 
+.home:hover {
+    color: blue;
+    fill: currentColor;
+  }
+  #home-search-use:hover {
+    color: pink;
+  }
