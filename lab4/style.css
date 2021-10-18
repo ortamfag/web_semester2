@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sky{
+    background: rgb(134, 197, 240);
+    width: auto;
+    height: 300px;
+    position: relative;
+}
+
+.button{
+    background:rgb(134, 197, 240);
+}
+
+.cloud {
+    position: absolute;
+    z-index: 3;
+}
+
+.cloud1 {
+    width: 120px;
+    top: 70px;
+	left: -30%;
+}
+.cloud2 {
+    width: 150px;
+	left: -20%;
+}
+
+.cloud3 {
+    width: 180px;
+	left: -40%;
+	top: 20px;
+}
+
+.cloud4{
+    width: 150px;
+	left: -30%;
+	top: 30px;
+}
+
+.paused{
+    animation-play-state: paused;
+}
+
+.land{
+    background: rgb(41, 170, 48);
+    width: auto;
+    height: 300px;
+    position: relative;
+}
+.tree{
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 600px;
+    width: 420px;
+    z-index: 5;
+}
+.deer{
+    position: absolute;
+    width: 150px;
+    top: 20px;
+    left: 700px;
+}
+#deer{
+    animation-name: deer;
+
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+@keyframes deer {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(150px); }
+    100% { transform: translateX(0px); }
+}
+.bear{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 100px;
+}
+.bear:hover{
+    transition: 2s;
+    width: 200px;
+}
+.turtle{
+    position: absolute;
+    top: 10px;
+    left: 990px; 
+    width: 70px;
+}
+#turtle{
+    animation-name: turtle;
+
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+@keyframes turtle {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(150px); }
+    100% { transform: translateY(0px); }
+}
+.rabbit{
+    position: absolute;
+    top: 30px;
+    left: 320px;
+    width: 80px;
+}
+#rabbit{
+    animation-name: rabbit;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    animation-timing-function: ease-in-out; 
+}
+@keyframes rabbit {
+        100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);}
+}

@@ -1,0 +1,59 @@
+li {
+  font-family: "Montserrat" sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background: #000000;
+  max-height: 100px; }
+
+main {
+  margin-top: 50px; }
+
+@forward text;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+nav li {
+  display: inline-block;
+  cursor: pointer; }
+  nav li:hover {
+    color: #3300CC;
+    transition: 0.4s; }
+
+@use text;
+.main__inner {
+  text-align: center;
+  color: black; }
+  .main__inner font {
+    size: 25px;
+    weight: 400; }
+
+.main__inner h1 {
+  margin-bottom: 30px; }
+.main__inner p {
+  margin-bottom: 30px;
+  margin: 0 30px 0 30px; }
+
+.math div {
+  margin: 20px; }
+.math .math--red {
+  width: 40px;
+  height: 80px;
+  background: red; }
+.math .math--blue {
+  width: 160px;
+  height: 30px;
+  background: blue; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+@use text
+    
+%for-title
+    $marginb30px: 30px !global
+    $marginlr30px: 0 30px 0 30px !global
+    text-align: center
+    color: black
+    font
+        size: 25px
+        weight: 400
+
+.main__inner
+    @extend %for-title
+
+    h1
+        margin-bottom: $marginb30px
+    
+
+    p
+        margin-bottom: $marginb30px
+        margin: $marginlr30px        
+    
+.math
+    div
+        margin: 20px
+    
+    $width: 80px !global
+    $height: 40px
+
+    .math--red
+        width: $width/2
+        height: $height + 40px
+        background: red
+
+    .math--blue
+        width: $width*2
+        height: $height - 10px
+        background: blue
+
+.test
+    @include text        

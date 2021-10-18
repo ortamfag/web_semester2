@@ -1,0 +1,27 @@
+$header-color: #000000
+
+@mixin text
+
+li
+    font:
+        family: 'Montserrat' sans-serif
+        size: 20px
+        weight: 400
+    color: #FFFFFF
+
+
+
+*
+    margin: 0
+    padding: 0
+body
+    @include text
+    
+header
+    background: $header-color
+    max-height: 100px
+main
+    margin-top: 50px
+
+@import layouts/nav
+@import Layouts/main
